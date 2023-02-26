@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Pacifico&display=swap');
+
+.imagem__carrossel {
+    object-fit: cover;
+    object-position: 0 80%;  /*primeiro é o eixo X e em segundo vem o eixo Y */
+    height: 400px;
+}
+
+.fonte__titulo {
+    font-family: 'Pacifico', cursive;
+}
+
+.cor__especial {
+    color: darkred !important
+    ;
+}
+
+.botao__cor_especial {
+    background-color: darkred;
+    
+}
+
+.bordar__cor_especial {
+    border-color: darkred;
+}
+
+.card__largura {
+    max-width: 18rem;
+}
+
+.card__posicao_imagem {
+    object-fit: cover;
+    height: 200px;
+}
+
+ol {
+    list-style:disc;
+}
+
+/* QUEM SOMOS */
+
+.quem__somos_titulo {
+    margin-bottom: 1rem;
+    color: #8d0606;
+    font-size: 3.1875rem;
+    font-family: pacifico,cursive;
+}
+
+.quem__somos_descricao {
+    font-weight: 100;
+    font-size: 1.75rem;
+}
+
+/* PESSOA */
+
+.pessoa {
+    display: flex;
+    flex-direction: column;
+}
+
+.pessoa__imagem {
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.pessoa__funcao {
+    text-transform: lowercase;
+    font-size: 1.25rem;
+}
+
+.pessoa__nome {
+    margin: 1rem 0;
+    font-family: pacifico,cursive;
+    color: #8d0606;
+    font-size: 2rem;
+}

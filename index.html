@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>fruto & fruta</title>
+  <link rel="stylesheet" href="/src/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="src/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+            <a class="navbar-brand fonte__titulo cor__especial" href="#">Fruta & Fruto</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#carouselExampleCaptions">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#receitas">Receitas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#quem__somos">Quem Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal__contato">Contato</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+    
+        <section id="carouselExampleCaptions" class="carousel slide" data-bs-interval="3000" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/src/img/carrossel-img1.jpg" class="d-block w-100 imagem__carrossel" alt="...">
+                <div class="carousel-caption d-none d-md-block h-50">
+                    <h1 class="fonte__titulo display-4">Reaproveite melhor os alimentos!</h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/src/img/carrossel-img2.jpg" class="d-block w-100 imagem__carrossel" alt="...">
+                <div class="carousel-caption d-none d-md-block h-50">
+                    <h1 class="fonte__titulo display-4">Economize e ganhe em saúde!</h1>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+        
+        <section id="titulo">
+            <h1 class="text-center fonte__titulo cor__especial pt-5">Receitas para economizar e ganhar saúde</h1>
+            <p class="text-center text-secondary pb-5">Nossas receitas ajudam você a aproveitar melhor os alimentos, economizar, ganhar tempo e praticidade  </p>
+        </section>
+
+        <section class="container-fluid bg-light" id="receitas">
+            <div class="row row-cols-3 justify-content-center">
+                <article class="col col-12 p-0 m-5 card bordar__cor_especial card__largura">
+                    <img src="src/img/receita-abacate.jpg" class="card-img-top card__posicao_imagem" alt="tigela com salada de abacate, vista superior">
+                    <div class="card-body">
+                    <h5 class="card-title">Tigela de abacate</h5>
+                    <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+                    <a href="#" class="btn botao__cor_especial btn-danger" id="teste" data-bs-toggle="modal" data-bs-target="#modal__abacate">Veja a receira</a>
+                    </div>
+                </article>
+
+                <article class="col col-12 p-0 m-5 card bordar__cor_especial card__largura">
+                    <img src="src/img/receita-kiwi.jpg" class="card-img-top card__posicao_imagem" alt="tigela de mingau com kiwi, vista superior">
+                    <div class="card-body">
+                    <h5 class="card-title">Salada de kiwi</h5>
+                    <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+                    <a href="#" class="btn botao__cor_especial btn-danger" data-bs-toggle="modal" data-bs-target="#modal__kiwi">Veja a receira</a>
+                    </div>
+                </article>
+
+                <article class="col col-12 p-0 m-5 card bordar__cor_especial card__largura">
+                    <img src="src/img/receita-mix.jpg" class="card-img-top card__posicao_imagem" alt="prato com mix de vegetais e mão de pessoa adicionando azeite, vista superior">
+                    <div class="card-body">
+                    <h5 class="card-title">Mix de vegetais</h5>
+                    <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+                    <a href="#" class="btn botao__cor_especial btn-danger" data-bs-toggle="modal" data-bs-target="#modal__mix">Veja a receira</a>
+                    </div>
+                </article>
+
+                <article class="col col-12 p-0 m-5 card bordar__cor_especial card__largura">
+                    <img src="src/img/receita-pimentoes.jpg" class="card-img-top card__posicao_imagem" alt="prato de salada de pimentões com alguns ingredientes ao lado, vista superior">
+                    <div class="card-body">
+                    <h5 class="card-title">Pimentões à Juliana</h5>
+                    <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+                    <a href="#" class="btn botao__cor_especial btn-danger" data-bs-toggle="modal" data-bs-target="#modal__pimentoes">Veja a receira</a>
+                    </div>
+                </article>
+
+                <article class="col col-12 p-0 m-5 card bordar__cor_especial card__largura">
+                    <img src="src/img/receita-oriental.jpg" class="card-img-top card__posicao_imagem" alt="tigela com salada de vegetais estilo oriental, vista de cima">
+                    <div class="card-body">
+                    <h5 class="card-title">Prato oriental</h5>
+                    <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+                    <a href="#" class="btn botao__cor_especial btn-danger" data-bs-toggle="modal" data-bs-target="#modal__oriental">Veja a receira</a>
+                    </div>
+                </article>
+
+                <article class="col col-12 p-0 m-5 card bordar__cor_especial card__largura">
+                    <img src="src/img/receita-beterrabas.jpg" class="card-img-top card__posicao_imagem" alt="tigela com beterrabas e dentes de alho assados em primeiro plano, com ingredientes ao fundo">
+                    <div class="card-body">
+                    <h5 class="card-title">Beterrabas assadas</h5>
+                    <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+                    <a href="#" class="btn botao__cor_especial btn-danger" data-bs-toggle="modal" data-bs-target="#modal__beterraba">Veja a receira</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="container text-center mt-3" id="quem__somos">
+            <h3 class="quem__somos_titulo">Quem somos</h3>
+            <p class="quem__somos_descricao mb-5 text-secondary">Conheça a comunidade por trás da iniciativa</p>
+            <div class="pessoas row">
+                <div class="pessoa col mb-5">
+                    <img class="pessoa__imagem pessoa__imagem--roberta" src="/src/img/roberta.jpg" alt="">
+                    <span class="pessoa__nome">Roberta</span>
+                    <span class="pessoa__funcao text-secondary">Conteúdo</span>
+                </div>
+                <div class="pessoa col mb-5">
+                    <img class="pessoa__imagem pessoa__imagem--marcela" src="/src/img/marcela.jpg" alt="">
+                    <span class="pessoa__nome">Marcela</span>
+                    <span class="pessoa__funcao text-secondary">Chef de cozinha</span>
+                </div>
+                <div class="pessoa col mb-5">
+                    <img class="pessoa__imagem pessoa__imagem--andreia" src="/src/img/andreia.jpg" alt="">
+                    <span class="pessoa__nome">Andréia</span>
+                    <span class="pessoa__funcao text-secondary">Pequena Produtora</span>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="bg-secondary p-3 text-center">
+        <p class="text-light m-0">Contato: <a class="text-light" href="mailto:familia.martinez.2009@hotmail.com">familia.martinez.2009@hotmail.com</a> | Luan Mendes</p>
+    </footer>
+
+
+
+  
+  <!-- Modal Contato-->
+    <div class="modal fade" id="modal__contato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <dialog class="modal-content">
+                <header class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Entre em contato</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </header>
+                <form action="">
+                    <article class="modal-body">
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome Completo</label>
+                            <input type="text" id="inputName" class="form-control" placeholder="Insira Seu Nome Completo" required>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Endereço de e-mail</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Deixe seu Comentário</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Insira aqui seu comentário"></textarea>
+                        </div>
+
+                    </article>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-danger botao__cor_especial">Enviar</button>
+                    </footer>
+                </form>
+            </dialog>
+        </div>
+    </div>
+
+    <!-- Modal Tigela de Abacate -->
+    <div class="modal fade" id="modal__abacate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <dialog class="modal-content">
+                <header class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Tigela de abacate</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </header>
+                <article>
+                    <ol>
+                        <li>xícaras de chá de abacate picado congelado</li>
+                        <li>bananas congeladas picadas</li>
+                        <li>colheres de sopa de mel ou açúcar mascavo</li>
+                        <li>Cerca de 1/2 xícara de chá de água</li>
+                    </ol>
+                </article>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </footer>
+            </dialog>
+        </div>
+    </div>
+
+    <!-- Modal Salada de Kiwi -->
+    <div class="modal fade" id="modal__kiwi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <dialog class="modal-content">
+                <header class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Salada de kiwi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </header>
+                <article>
+                    <ol>
+                        <li>romã(você vai usar apenas algumas sementes)</li>
+                        <li>kiwis descascados e fatiados</li>
+                        <li>manga (você vai usar apenas um pequeno pedaço)</li>
+                    </ol>
+                </article>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </footer>
+            </dialog>
+        </div>
+    </div>
+
+    <!-- Modal Mix de Vegetais -->
+    <div class="modal fade" id="modal__mix" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <dialog class="modal-content">
+                <header class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Mix de Vegetais</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </header>
+                <article>
+                    <ol>
+                        <li>150 gramas de brócolis</li>
+                        <li>150 gramas de couve-flor</li>
+                        <li>100 gramas de vagem</li>
+                        <li>3 batatas baroas</li>
+                        <li>5 fatias de abóbora assada</li>
+                        <li>1 colher de sopa de manteiga</li>
+                        <li>1 colher de sopa de água</li>
+                        <li>Sal a gosto</li>
+                    </ol>
+                </article>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </footer>
+            </dialog>
+        </div>
+    </div>
+
+    <!-- Pimentões a Juliana -->
+    <div class="modal fade" id="modal__pimentoes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <dialog class="modal-content">
+                <header class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Pimentões a Juliana</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </header>
+                <article>
+                    <ol>
+                        <li>1 unidade cenoura em fatias grossas</li>
+                        <li>1 unidade abobrinha em tiras grossas</li>
+                        <li>1/2 unidade pimentão vermelho em tiras grossas</li>
+                        <li>1/2 unidade pimentão amarelo em tiras grossas</li>
+                        <li>1 colher (sopa) de salsa picada</li>
+                        <li>1 colher (chá) de sal</li>
+                    </ol>
+                </article>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </footer>
+            </dialog>
+        </div>
+    </div>
+
+    <!-- Prato Oriental -->
+    <div class="modal fade" id="modal__oriental" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <dialog class="modal-content">
+                <header class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Prato Oriental</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </header>
+                <article>
+                    <ol>
+                        <li>1 pimentão;</li>
+                        <li>½ colher de chá de curry em pó;</li>
+                        <li>1 pitada de cominho em pó;</li>
+                        <li>500ml de água;</li>
+                        <li>1 colher de chá de molho inglês;</li>
+                        <li>½ colher de chá de konsome;</li>
+                    </ol>
+                </article>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </footer>
+            </dialog>
+        </div>
+    </div>
+
+    <!-- Beterrabas Assadas -->
+    <div class="modal fade" id="modal__beterraba" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <dialog class="modal-content">
+                <header class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Beterrabas Assadas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </header>
+                <article>
+                    <ol>
+                        <li>2 beterrabas</li>
+                        <li>Salsinha desidratada</li>
+                        <li>Pimenta calabresa</li>
+                        <li>Sal do Himalaia</li>
+                        <li>Raminhos de coentro</li>
+                        <li>Azeite</li>
+                    </ol>
+                </article>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </footer>
+            </dialog>
+        </div>
+    </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
